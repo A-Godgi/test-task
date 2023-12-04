@@ -1,7 +1,7 @@
 {
   "name": "test-task",
   "version": "0.1.0",
-  "homepage": "https://github.com/A-Godgi/test-task",
+  "homepage": "https://A-Godgi.github.io/test-task",
   "private": true,
   "dependencies": {
     "@fontsource/nunito": "^5.0.15",
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.0",
     "sass": "^1.69.5"
   }
