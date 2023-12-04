@@ -1,6 +1,7 @@
 .header
   display: flex
   justify-content: space-between
+  align-items: center
   width: 100%
   max-width: 1170px
   &-container
@@ -8,10 +9,14 @@
     justify-content: center
     padding: 13px 60px
     background: white
+    @media (max-width: 768px)
+      padding: 13px 32px
+    @media (max-width: 360px)
+      padding: 13px 16px
   &-button-group
     display: flex
     & a:first-of-type
-      margin-right: 1rem
+      margin-right: 10px
 
 .logo
   width: 104px
