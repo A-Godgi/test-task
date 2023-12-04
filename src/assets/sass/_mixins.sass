@@ -1,0 +1,17 @@
+//General font
+@mixin font
+  font-family: "Nunito"
+  font-weight: 400
+  color: $black
+
+//Text component font
+@mixin body
+  @include font
+  font-size: 16px
+  line-height: 26px
+
+//Center block
+@mixin center
+  display: flex
+  justify-content: center
+  align-items: center
