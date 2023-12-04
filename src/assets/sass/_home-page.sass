@@ -1,0 +1,83 @@
+//General
+.button-container
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 32px
+
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+
+//Top section
+.top-section
+  width: 100%
+  max-width: 1170px
+  background-size: cover
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../images/img-1170.png'), no-repeat, center
+  height: 650px
+  @include center
+  &-content
+    text-align: center
+    max-width: 380px
+    & p
+      color: white
+    & h1
+      color: white
+      margin-top: 0
+    @media (max-width: 360px)
+      width: 100%
+  @media (max-width: 1024px)
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../images/img-1024.png'), no-repeat, center
+  @media (max-width: 768px)
+    height: 500px
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../images/img-768.png'), no-repeat, center
+  @media (max-width: 360px)
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../images/img-360.png'), no-repeat, center
+    padding: 40px 16px
+    display: block
+
+//Users section
+.users-section
+  margin-top: 140px
+  width: 100%
+  max-width: 1290px
+  padding: 0 60px
+  & .heading:first-of-type
+    margin: 0 0 50px 0
+    text-align: center
+  @media (max-width: 768px)
+    padding: 0 32px
+  @media (max-width: 360px)
+    padding: 0 16px
+
+.users-container
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr))
+  gap: 29px
+  margin-bottom: 50px
+  @media (max-width: 768px)
+    gap: 16px
+  @media (max-width: 360px)
+    gap: 20px
+
+//Registration section
+.registration-section
+  margin-top: 140px
+  margin-bottom: 100px
+  padding: 0 16px
+  @include center
+  flex-direction: column
+  & .heading
+    margin-top: 0
+    margin-bottom: 50px
+    text-align: center
+
+form
+  width: 100%
+  max-width: 380px
+  & .body
+    margin-top: 38px
+    margin-bottom: 11px
