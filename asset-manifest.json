@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.6878a90f.css",
+    "main.js": "/test-task/static/js/main.6909d547.js",
+    "static/media/img-1170.png": "/test-task/static/media/img-1170.62ba91684fe597b38795.png",
+    "static/media/img-1024.png": "/test-task/static/media/img-1024.38bd2265efa04a551da2.png",
+    "static/media/img-768.png": "/test-task/static/media/img-768.fcdefa13b697cf004e79.png",
+    "static/media/img-360.png": "/test-task/static/media/img-360.2d3d8eab8df90bcc1482.png",
+    "static/media/success-image.svg": "/test-task/static/media/success-image.0d3202ba11b04fa7364b0f83ce42aea5.svg",
+    "static/media/Logo.svg": "/test-task/static/media/Logo.8bb55362d01d55393ccc5476d96f0c14.svg",
+    "static/media/nunito-latin-ext-400-normal.woff": "/test-task/static/media/nunito-latin-ext-400-normal.d7fd3552b366176fbee8.woff",
+    "static/media/nunito-latin-400-normal.woff": "/test-task/static/media/nunito-latin-400-normal.9db1b61712b5c39a8aed.woff",
+    "static/media/nunito-latin-400-normal.woff2": "/test-task/static/media/nunito-latin-400-normal.b8644b6e04ecda1cf98b.woff2",
+    "static/media/nunito-cyrillic-ext-400-normal.woff": "/test-task/static/media/nunito-cyrillic-ext-400-normal.8b2f617b5d187c7c1d33.woff",
+    "static/media/nunito-latin-ext-400-normal.woff2": "/test-task/static/media/nunito-latin-ext-400-normal.e8049e65c49ce687cff1.woff2",
+    "static/media/nunito-cyrillic-ext-400-normal.woff2": "/test-task/static/media/nunito-cyrillic-ext-400-normal.f21ac09511c6fa4f9463.woff2",
+    "static/media/nunito-cyrillic-400-normal.woff": "/test-task/static/media/nunito-cyrillic-400-normal.95256216726689382c8b.woff",
+    "static/media/nunito-cyrillic-400-normal.woff2": "/test-task/static/media/nunito-cyrillic-400-normal.166e8e87ae0b6f3deed3.woff2",
+    "static/media/nunito-vietnamese-400-normal.woff": "/test-task/static/media/nunito-vietnamese-400-normal.ed41238c5aa8eda2c544.woff",
+    "static/media/nunito-vietnamese-400-normal.woff2": "/test-task/static/media/nunito-vietnamese-400-normal.6a8bc7acd205391fb71a.woff2",
+    "static/media/photo-cover.svg": "/test-task/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
+    "index.html": "/test-task/index.html",
+    "static/media/Preloader.svg": "/test-task/static/media/Preloader.0aaf07f39acaa32ce036564ce35dba88.svg",
+    "main.6878a90f.css.map": "/test-task/static/css/main.6878a90f.css.map",
+    "main.6909d547.js.map": "/test-task/static/js/main.6909d547.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6878a90f.css",
+    "static/js/main.6909d547.js"
+  ]
+}
