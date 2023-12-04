@@ -1,0 +1,203 @@
+//Heading component
+.heading
+  @include font
+  font-size: 40px
+  line-height: 40px
+
+//Text component
+.body
+  @include body
+
+//Button and Link components
+.btn
+  @include center
+  background-color: $primary-color
+  border: none
+  min-width: 100px
+  height: 34px
+  @include body
+  text-align: center
+  border-radius: 80px
+  text-decoration: none
+  cursor: pointer
+  &-disabled
+    background-color: $gray
+    color: $white
+
+//Spinner component
+.spinner
+  width: 15px
+  height: 15px
+  animation: spin 1s ease-in-out infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+//UserCard component
+.user-card
+  background-color: white
+  border-radius: 16px
+  padding: 20px
+  overflow: hidden
+  text-align: center
+  width: 100%
+  & .body
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    &:first-of-type
+      margin: 20px 0
+
+.avatar
+  width: 70px
+  height: 70px
+  border-radius: 50%
+
+//Tooltip
+.tooltip
+  background-color: $black
+  @include body
+  color: white
+  padding: 3px 16px
+  border-radius: 4px
+
+.arrow
+  background-color: transparent
+
+//Input component
+.input-container
+  position: relative
+  margin-bottom: 50px
+  width: 100%
+
+.input
+  font-size: 12px
+  padding: 14px 16px
+  display: block
+  width: 100%
+  height: 54px
+  border: 1px solid $light-gray
+  border-radius: 4px
+  background: none
+  &:focus
+    outline: none
+    border: 2px solid $light-gray
+  &:focus ~ .input-label,
+  &:valid ~ .input-label
+    top: -6px
+    font-size: 12px
+    line-height: 14px
+    font-weight: 500
+    color: $gray-secondary
+    background-color: $background-color
+    padding: 0 4px
+  &-error
+    border: 2px solid $error
+    & ~ .helper-text,
+    & ~ .input-label
+      color: $error
+    &:focus
+      border: 2px solid $error
+    &:focus ~ .input-label,
+    &:valid ~ .input-label
+      color: $error
+
+.helper-text
+  position: absolute
+  left: 16px
+  bottom: -18px
+  font-size: 12px
+  line-height: 14px
+  color: $gray-secondary
+
+.input-label
+  @include body
+  color: $gray-secondary
+  font-size: 18px
+  position: absolute
+  pointer-events: none
+  left: 16px
+  top: 14px
+  transition: 0.2s ease all
+  -moz-transition: 0.2s ease all
+  -webkit-transition: 0.2s ease all
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+
+//radio button
+.radio
+  position: relative
+  appearance: none
+  width: 20px
+  height: 20px
+  margin-right: 12px
+  border-radius: 50%
+  border: 1px solid $light-gray
+  &:checked
+    border: 1px solid $accent-color
+    &::before
+      content: ""
+      position: absolute
+      width: 12px
+      height: 12px
+      top: calc(50% - 6px)
+      left: calc(50% - 6px)
+      background-color: $accent-color
+      border-radius: 50%
+
+  &-container
+    display: flex
+    align-items: center
+    margin-bottom: 13px
+
+//UploadField component
+input[type="file"]
+  display: none
+
+.upload
+  position: relative
+  cursor: pointer
+  display: flex
+  margin-bottom: 50px
+  margin-top: 37px
+  &-button
+    height: 54px
+    width: 83px
+    @include center
+    @include body
+    border: 1px solid $black
+    border-radius: 4px 0 0 4px
+  &-input
+    cursor: default
+    width: 100%
+    background: none
+    border-width: 1px 1px 1px 0
+    border-style: solid
+    border-color: $light-gray
+    border-radius: 0 4px 4px 0
+    padding: 14px 16px
+    &:focus
+      outline: none
+  &-error .upload-button
+    border: 2px solid $error
+  &-error .upload-input
+    border-color: $error
+    border-width: 2px 2px 2px 0
+
+.error-text
+  position: absolute
+  left: 16px
+  bottom: -18px
+  font-size: 12px
+  line-height: 14px
+  color: $error
